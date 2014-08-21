@@ -76,6 +76,15 @@ li a {
   z-index: 1; 
   !important; 
   }
+#attribution { 
+  width: 360px; 
+  padding: 1em 2em 0.5em; 
+  margin: 50px 50px 0 auto; 
+  background-color: #161616; 
+  opacity: 0.8; 
+  z-index: 1; 
+  !important; 
+  }
 @media (max-width: 767px) {
   #monogram { 
     position: relative; 
@@ -89,6 +98,9 @@ li a {
     padding: 20px; 
     margin: 0 
     !important; 
+    }
+  #attribution { 
+    display: none; 
     }
   body { 
     background-image: none; 

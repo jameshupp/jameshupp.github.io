@@ -79,7 +79,7 @@ li a {
 #attribution { 
   width: 360px; 
   padding: 1em 2em 0.5em; 
-  margin: 50px 50px 0 auto; 
+  margin: 0 50px 0 auto; 
   background-color: #161616; 
   opacity: 0.8; 
   z-index: 1; 

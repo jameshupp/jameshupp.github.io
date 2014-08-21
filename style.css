@@ -90,7 +90,7 @@ li a {
     margin: 0 
     !important; 
     }
-  background-image { 
-    opacity: 0.2; 
+  body { 
+    background-image: none; 
     }
   }

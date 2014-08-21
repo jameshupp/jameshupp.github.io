@@ -3,7 +3,7 @@
   margin: 0; 
   }
 body { 
-  background-color: #161616; 
+  background-color: rgba(22,22,22,0.8); 
   background-image: url("jh-bg.JPG"); 
   background-repeat: no-repeat; 
   background-attachment: fixed; 
@@ -71,8 +71,7 @@ li a {
   width: 360px; 
   padding: 1em 2em 0.5em; 
   margin: 50px 50px 0 auto; 
-  background-color: #161616; 
-  opacity: 0.8; 
+  background-color: rgba(22,22,22,0.8); 
   z-index: 1; 
   !important; 
   }
@@ -80,8 +79,7 @@ li a {
   width: 360px; 
   padding: 1em 2em 0.5em; 
   margin: 0 50px 0 auto; 
-  background-color: #161616; 
-  opacity: 0.8; 
+  background-color: rgba(22,22,22,0.8); 
   z-index: 1; 
   !important; 
   }
@@ -104,5 +102,6 @@ li a {
     }
   body { 
     background-image: none; 
-    }
+    background-color: rgba(22,22,22,0.8); 
+  }
   }

@@ -3,14 +3,14 @@
   margin: 0; 
   }
 body { 
-  background-color: rgba(22,22,22,0.8); 
+  background-color: rgba(22,22,22,0.9); 
   background-image: url("jh-bg.JPG"); 
   background-repeat: no-repeat; 
   background-attachment: fixed; 
   }
 h1 { 
   color: #aaaaaa; 
-  font-family: Helvetica, Arial, sans-serif; 
+  font-family: Rockwell, "Courier New", Courier New, Courier, Georgia, Times, "Times New Roman", serif; 
   letter-spacing: 1px; 
   font-size: 40px; 
   font-weight: bold; 
@@ -18,13 +18,13 @@ h1 {
   }
 h2 { 
   color: #ff0000; 
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+  font-family: Helvetica, Helvetica Neue, Arial, sans-serif; 
   font-size: 28px; 
   margin-bottom: 0.5em; 
   }
 p { 
   color: #fff; 
-  font-family: Helvetica; 
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, Garamond, Georgia,serif; 
   font-size: 18px; 
   line-height: 1.5; 
   margin-bottom: 1em; 
@@ -71,7 +71,7 @@ li a {
   width: 360px; 
   padding: 1em 2em 0.5em; 
   margin: 50px 50px 0 auto; 
-  background-color: rgba(22,22,22,0.8); 
+  background-color: rgba(22,22,22,0.9); 
   z-index: 1; 
   !important; 
   }
@@ -79,7 +79,7 @@ li a {
   width: 360px; 
   padding: 1em 2em 0.5em; 
   margin: 0 50px 0 auto; 
-  background-color: rgba(22,22,22,0.8); 
+  background-color: rgba(22,22,22,0.9); 
   z-index: 1; 
   !important; 
   }
@@ -102,6 +102,6 @@ li a {
     }
   body { 
     background-image: none; 
-    background-color: rgba(22,22,22,0.8); 
+    background-color: rgba(22,22,22,0.9); 
   }
   }

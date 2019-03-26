@@ -48,9 +48,9 @@ body {
 }
 
 figure {
-  font-size: smaller;
+  font-size: small;
   border: thin #212529 solid;
-  background-color: #212529;
+  background-color: #6671BD;
 }
 
 figcaption {
@@ -58,7 +58,7 @@ figcaption {
   color: #ffffff;
   font-family: 'Source Sans Pro';
   padding: 0rem 1rem 1rem;
-  background-color: #212529, ;
+  background-color: #6671BD;
 }
 
 h1,
@@ -353,6 +353,52 @@ z-index: 1;
   font-size: 1.2rem;
 }
 
+.portfolio-item-alt {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolio-item-alt .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.portfolio-item-alt .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item-alt .caption .caption-content h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.portfolio-item-alt .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.portfolio-item-alt::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #212529 90%);
+  margin-top: -350px;
+  height: 350px;
+  width: 100%;
+  content: '';
+}
+
 @media (min-width: 992px) {
   .portfolio-item {
     max-width: none;
@@ -379,7 +425,47 @@ z-index: 1;
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+  .portfolio-item:hover::after img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #212529 90%);
+  }
   .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item-alt {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item-alt .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolio-item-alt .caption .caption-content {
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolio-item-alt img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .portfolio-item-alt:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item-alt:hover::after img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #212529 90%);
+  }
+  .portfolio-item-alt:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
@@ -455,7 +541,7 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: #1D809F !important;
+  background-color: #6671BD !important;
 }
 
 .text-primary {

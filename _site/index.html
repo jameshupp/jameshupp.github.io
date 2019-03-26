@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<script>
+		var host = "jameshupp.github.io";
+		if ((host == window.location.host) && (window.location.protocol != "https:"))
+    		window.location.protocol = "https";
+    	</script>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>James Hupp</title>
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="robots" content="all" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="brah_jh_fav.png">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- swap out for a logo -->
+<!-- Commented out until I fix the image. Will also need to return negative top-padding to the about ID CSS.
+<div id="monogram">
+	<img src="brah_jh.png" />
+</div>
+-->
+
+<!-- swap out for information about yourself -->
+<div id="about">
+	<h1>James Hupp</h1>
+	<h2>About</h2>
+	<p>James is a person. He believes in being nice.</p>
+	<p>James is a content designer and strategist, currently managing the content design team at
+		<a href="https://18f.gsa.gov/">18F</a>. Previously, he worked at the
+		<a href="http://www.consumerfinance.gov">Consumer Financial Protection Bureau</a>.</p>
+	<p>James’s career began in digital campaigning: building email strategies for
+		non-profits, managing tools and programs that enabled Obama for America’s grassroots
+		supporters to raise money, and helping a progressive digital startup get off
+		the ground.</p>
+	<p>Campaigning taught him to motivate an audience; government taught him that
+		information needs to be sustainable. He’s been putting that understanding to
+		use in public service ever since.</p>
+	<p>James is originally from Kansas City, Mo. Today, he lives Brooklyn. His nascent
+		international travel habit is abetted by his better-traveled girlfriend; his
+		home fermenting habit is abetted, sadly, by nobody. He could really use a climbing
+		buddy.</p>
+	<p><a href="mailto:jrhupp@gmail.com"><strong>Get in touch!</strong></a></p>
+	<h2>Elsewhere...</h2>
+	<ul>
+		<li><a href="https://twitter.com/jameshupp">Twitter</a></li>
+		<li><a href="http://instagram.com/jameshupp">Instagram</a></li>
+		<li><a href="https://www.flickr.com/photos/uniquelikeeverybody/">Flickr</a></li>
+	</ul>
+</div>
+<div id="attribution">
+	<p><em><a href="https://www.flickr.com/photos/uniquelikeeverybody/10201201993/in/set-72157636416712603">Background photo under CC license</a></em></p>
+</div>
+
+<!--include jquery & backstretch-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+<script type="text/javascript">
+$(function(){
+     $(window).resize(function(){
+         if($(this).width() >= 767){
+             $.backstretch("jh_bg.jpg", {speed: 150});
+         }
+      })
+      .resize();//trigger resize on page load
+});
+</script>
+
+</body>
+</html>

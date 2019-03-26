@@ -65,7 +65,7 @@ header
 
 #hero {
 width: 576px;
-padding: 2rem 2rem;
+padding: 2rem 1rem;
 border-radius: .5rem;
 margin: auto;
 background-color: rgba(205,205,205,0.5);

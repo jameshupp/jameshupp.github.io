@@ -53,35 +53,156 @@
   <!-- Header -->
   <header class="internalmast">
     <div class="container text-center my-auto">
-      <h1 class="mb-1"><a href="./">James Hupp</a></h1>
+      <h1><a href="./">James Hupp</a></h1>
     </div>
-    <div class="overlay"></div>
   </header>
 
   <!-- Article -->
   <section class="internal-section bg-light">
-    <div class="container col-lg-8 text-left">
+    <div class="container col-lg-6 text-left">
       <div class="internal-section-heading">
         <h3 class="text-secondary mb-0">A content model for FEC.gov</h3>
-        <h2>Removing duplicate content and creating a manageable user journey</h2>
+        <h2>Just enough reporting information, delivered just in time</h2>
       <div class="row mx-auto">
-            <div class="container text-center">
-              <img class="img-fluid" src="img/portfolio-1.jpg" alt="A test image">
-            </div>
-        	<p>James is a content designer and strategist, currently managing the content design team at
-        		<a href="https://18f.gsa.gov/">18F</a>. Previously, he worked at the
-        		<a href="http://www.consumerfinance.gov">Consumer Financial Protection Bureau</a>.</p>
-        	<p>James’s career began in digital campaigning: building email strategies for
-        		non-profits, managing a program and product that enabled Obama for America’s grassroots
-        		supporters to raise money before he knew what product management was, and helping a progressive
-            digital startup get off the ground.</p>
-        	<p>Campaigning taught him to motivate an audience; government taught him that
-        		information needs to be sustainable. He’s been putting that understanding to
-        		use in public service ever since.</p>
-        	<p>James is originally from Kansas City, Mo. Today, he lives Brooklyn. His nascent
-        		international travel habit is abetted by his better-traveled girlfriend; his
-        		home fermenting habit is abetted, sadly, by nobody. He could really use a climbing
-        		buddy.</p>
+        <div class="container text-center">
+          <img class="img-fluid mb-4" src="img/portfolio-1.jpg" alt="A test image">
+        </div>
+        <p>The <a href="https://www.fec.gov/">Federal Election Commission</a> (FEC)
+          administers and enforces federal campaign finance law. For every presidential
+          or Congressional election, the FEC governs how campaigns raise, account
+          for, and spend funds.</p>
+
+        <h4>Background</h4>
+
+        <p>In 2017 I joined a distributed team of designers and developers who
+          were working with the FEC to redesign their website. When I joined,
+          the focal points of the work were 1) switching the beta version of
+          the new site to being the primary site; and 2) coaching the FEC’s
+          content managers, designers, and engineers to manage the site effectively
+          without us.</p>
+
+        <p>Much of the content work that had already been done focused on developing
+          plain language content to help people understand the rules: eligibility,
+          deadlines, definitions, etc. What had not been worked on was reporting
+          guidance. Every candidate, party, and political action committee that
+          engages in political activity for federal elections has reporting
+          requirements. How do you report to the FEC properly to demonstrate that you
+          are following the rules?</p>
+
+        <h4>The problem</h4>
+
+        <p>The FEC had plenty of material to support reporting: software to
+          manage and automate filing, along with its user manual; complex scenarios
+          designed to train multiple reporting needs at once at in-person conferences;
+          full-scale campaign finance guides for each type of campaign committee;
+          video walkthroughs of the software; and FAQs. For nearly every reporting
+          task, there was some overlapping combination of examples and instruction
+          available, each produced and managed by a different set of people.</p>
+
+        <p>Research showed that repetitive and disparate reporting example content
+          meant people were never certain they had the most up-to-date information,
+          or complete information. Siloing the content types away from each other
+          confused users. Teams at the FEC were repeating work they didn’t need
+          to. And keeping them separate from the help content meant it was never
+          available as-needed in the amount needed; veteran campaigners might know
+          it, but it was effectively hidden from people new to the field."</p>
+
+        <h4>The work</h4>
+
+        <p>I partnered with a senior FEC analyst to select some relatively complex
+          examples of reporting needs (like how to report a loan from a candidate
+          to their own campaign and then the repayment of that same loan). These
+          served as the basis for the just-in-time reporting instructions we
+          hoped to develop.</p>
+
+        <p>Our first task was to figure out how to contextualize reporting.
+          We went through the help content together and discovered that every
+          one of the reporting needs corresponded to existing or in-progress
+          help content. (For example, there was already content about whether
+          and how a candidate could make a loan to their own campaign, and what
+          the rules were around repaying that loan.) The opportunity was clear:
+          when someone wanted to understand the rules, that was a chance to tell
+          them how to report their activity. They might or might not need to know
+          right then, but they would probably notice it was there.</p>
+
+        <p>From there, I pulled out the relevant information for each of our
+          chosen examples from the reporting materials. I built single narratives
+          for each example, adding supporting media where appropriate. Bringing
+          it together immediately let us eliminate duplicate information.</p>
+
+        <p>Once we had the examples written out, I extrapolated them into a rough
+          content model that could cover most use cases cleanly. Too much fidelity
+          would have been counter to our usual approach: collaborate, learn by buildling,
+          and iterating until we find something that works.</p>
+
+          <div class="container text-center">
+            <figure>
+              <img class="img-fluid mb-3" src="img/working-RE-model.png" alt="The content model for
+              FEC reporting examples, as it looked in development, shows the hierarchy
+              of the reporting content and its relationship to the help content.">
+              <figcaption>
+                The content model for reporting examples established a hierarchy
+                for the disparate information we were bringing together. The <em>main
+                page</em> was the existing help content, and then the <em>reporting
+                examples</em> lived alongside them. The color key, which I used to highlight
+                the samples I built the model from, helped the FEC analysts understand
+                the origin of information I was reworking.
+              </figcaption>
+            </figure>
+          </div>
+
+        <p>I then worked through approaches with our visual designer, adjusting
+          language and hierarchy to make sure both content and design could
+          work within our principles and style. Once implemented, the result
+          was a new content type in the CMS called <em>reporting examples</em>, presented
+          individually on the website as <em>How to report: <strong>[need]</strong></em>.
+          And because it was its own content type, we could drop cards linking
+          to the reporting examples into any help content where they were relevant.</p>
+
+          <div class="container text-center">
+            <figure>
+              <img class="img-fluid mb-3" src="img/RE-cards-help.png" alt="Reporting example
+              cards, situated within help content, linked to the reporting example content
+              assembled together.">
+              <figcaption>
+                When the new reporting examples went live, we were able to situate
+                cards right in the middle of help content that hyperlinked to the
+                reporting examples. In this case, both <em>Candidate personal funds
+                loans</em> and <em>Loan principal and interest payments</em> were
+                relevant to anyone who wanted to understand how candidates could
+                use their personal funds to support their campaigns.
+              </figcaption>
+            </figure>
+          </div>
+
+        <h4>Results</h4>
+
+        <p>The reporting examples eliminated the partial overlaps of information,
+          brought different aspects of the reporting process together out of
+          their siloes, reduced duplication of work, and delivered the content
+          to users right where they needed to understand it.</p>
+
+          <div class="container text-center">
+            <figure>
+              <img class="img-fluid mb-3" src="img/RE-realized.png" alt="A test image">
+              <figcaption>
+                Reporting examples began with introductions that provided any context
+                someone might need, whether they were coming from the help content
+                or not. Information about individual forms included both a visual
+                example of the form that highlighted relevant fields, and
+                a caption that explained what the candidate’s entries signified.
+              </figcaption>
+            </figure>
+          </div>
+
+        <p>The final step was making this new approach viable for the content
+          managers, who were largely analysts and communications professionals.
+          I created a style guide for the components of the reporting example,
+          which they were able to use to assemble dozens of reporting examples
+          in the space of a few weeks.</p>
+
+        <p><em>The reporting example used most consistenly in this case study is
+          <a href="https://www.fec.gov/help-candidates-and-committees/filing-reports/candidate-personal-funds-loans/">Candidate personal funds loans</a>.</em></p>
       </div>
       <div class="text-center mt-5">
         <a class="btn btn-secondary btn-xl js-scroll-trigger" href="./#portfolio">See more of my work</a>

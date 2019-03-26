@@ -47,6 +47,20 @@ body {
   text-transform: uppercase;
 }
 
+figure {
+  font-size: smaller;
+  border: thin #212529 solid;
+  background-color: #212529;
+}
+
+figcaption {
+  text-align: left;
+  color: #ffffff;
+  font-family: 'Source Sans Pro';
+  padding: 0rem 1rem 1rem;
+  background-color: #212529, ;
+}
+
 h1,
 h2,
 h3,
@@ -77,13 +91,13 @@ z-index: 1;
 .internalmast {
   font-family: 'Source Sans Pro';
   font-weight: 700;
-  min-height: 30rem;
+  min-height: 8rem;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
   padding-top: 1rem;
-  padding-bottom: 8rem;
+  padding-bottom: 1rem;
   background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../img/bg-masthead-jh.jpg');
   background-position: center center;
   background-repeat: no-repeat;

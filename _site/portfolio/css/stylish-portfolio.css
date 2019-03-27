@@ -123,21 +123,6 @@ z-index: 1;
 
 
 
-/* Map */
-.map {
-  height: 30rem;
-}
-
-@media (max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-}
-
-.map iframe {
-  pointer-events: none;
-}
-
 .scroll-to-top {
   position: fixed;
   right: 15px;

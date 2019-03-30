@@ -81,18 +81,14 @@ h5 {
   font-size: 1rem;
 }
 
-header
-
-#hero {
-width: 576px;
+header #hero {
+max-width: 640px;
 padding: 2rem 1rem;
 border-radius: .5rem;
 margin: auto;
 background-color: rgba(205,205,205,0.3);
 z-index: 1;
-!important;
 }
-
 
 .internalmast {
   font-family: 'Source Sans Pro';
@@ -109,10 +105,10 @@ z-index: 1;
   background-size: cover;
 }
 
-  h1 a {
-    text-decoration: none;
-    color: #212529;
-  }
+h1 a {
+  text-decoration: none;
+  color: #212529;
+}
 
 
 .scroll-to-top {
@@ -156,7 +152,7 @@ z-index: 1;
 }
 
 .masthead h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   margin: 0;
   padding: 0;
 }
@@ -170,9 +166,6 @@ z-index: 1;
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
-  }
-  .masthead h1 {
-    font-size: 5.5rem;
   }
   .internalmast h1 {
     font-size: 5.5rem;
@@ -212,46 +205,24 @@ z-index: 1;
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
-  .portfolio-item-alt {
-    max-width: none;
-    margin: 0;
-  }
-  .portfolio-item-alt .caption {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-    -webkit-clip-path: inset(0px);
-    clip-path: inset(0px);
-  }
-  .portfolio-item-alt .caption .caption-content {
-    -webkit-transition: opacity 0.25s;
-    transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
-  }
-  .portfolio-item-alt img {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
-  }
-  .portfolio-item-alt:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
-  .portfolio-item-alt:hover::after img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #212529 90%);
-  }
-  .portfolio-item-alt:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
 }
 
 @media (max-width: 640px) {
   .masthead {
     background-image: none;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    min-height: 0rem;
+  }
+  .masthead h1 {
+    font-size: 4rem;
+  }
+  header #hero {
+    padding: none;
+    border-radius: 0rem;
+    margin: auto;
+    background-color: rgba(255,255,255,0.5);
+
   }
   .internalmast {
     background-image: none;
@@ -421,46 +392,10 @@ z-index: 1;
   font-size: 1.2rem;
 }
 
-.portfolio-item-alt {
+.portfolio-item::after {
   display: block;
   position: relative;
-  overflow: hidden;
-  max-width: 530px;
-  margin: auto auto 1rem;
-}
-
-.portfolio-item-alt .caption {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-.portfolio-item-alt .caption .caption-content {
-  color: #fff;
-  margin: auto 2rem 2rem;
-}
-
-.portfolio-item-alt .caption .caption-content h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-.portfolio-item-alt .caption .caption-content p {
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-
-.portfolio-item-alt::after {
-  display: block;
-  position: relative;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #212529 80%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #212529 90%);
   margin-top: -350px;
   height: 350px;
   width: 100%;

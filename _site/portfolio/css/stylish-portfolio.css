@@ -50,14 +50,13 @@ body {
 figure {
   font-size: small;
   border: thin #212529 solid;
-  background-color: #6671BD;
 }
 
 figcaption {
   text-align: left;
   color: #ffffff;
   font-family: 'Source Sans Pro';
-  padding: 0rem 1rem 1rem;
+  padding: 1rem;
   background-color: #6671BD;
 }
 
@@ -250,6 +249,9 @@ z-index: 1;
   }
   .internal-section-heading h4 {
     font-size: 1.25rem;
+  }
+  .internal-section-heading h5 {
+    font-size: 1rem;
   }
 }
 

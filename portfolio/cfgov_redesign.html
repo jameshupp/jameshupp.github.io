@@ -70,15 +70,24 @@
         </div>
         <h4>Background</h4>
 
-        <p>The Consumer Financial Protection Bureau (CFPB) launched its website,
-          consumerfinance.gov, in 2011. At the time, the CFPB had about 50 employees.
-          Over the next couple years, the agency grew to more than 1000 employees,
-          but the design and engineering resources didn’t grow as quickly. Periodic
-          site redesigns were small and served mostly to pay down technical debt
-          and deliver on overdue promises to program offices. The result was a mishmashed
-          tech stack, inconsistent visual style, and IA with little intentionality.</p>
+        <p>The Consumer Financial Protection Bureau (CFPB) was created in the wake
+          of the financial crisis to to provide a single point of accountability
+          for enforcing federal consumer financial laws and protecting consumers
+          in the financial marketplace.</p>
 
-        <p>In 2014, the Technology and Innovation team finally added enough capacity
+        <p>The CFPB launched its website, <a href="https://www.consumerfinance.gov">consumerfinance.gov</a>,
+          in 2011. At the time, the CFPB had about 50 employees and was growing rapidly,
+          both in terms of personnel and in terms of policy and communication deliverables. There
+          were few limits on who could make demands of the site, how often, and in what way.</p>
+
+        <p>By 2014, the agency had more than 1000 employees. Adding digital technology
+          talent had lagged others, and the site had become a significant stakeholder
+          management problem. And there were just as many external audiences that the site couldn’t ignore: regulated
+          companies, consumer advocates, small practitioners, financial
+          coaches, other policymakers, journalists, civil and criminal lawyers, and
+          consumers themselves of all sorts of backgrounds working on all sorts of problems.</p>
+
+        <p>In 2014, the CFPB Office of Technology and Innovation finally added enough capacity
           to devote a full-time multidisciplinary team to consumerfinance.gov. As
           the CFPB’s first content strategist, I joined the team, along with four
           engineers, two visual designers, two UX designers (one also serving as
@@ -86,59 +95,53 @@
 
         <h4>The problem</h4>
 
-        <p>For a website team, the CFPB presented a big stakeholder management problem.
-          The CFPB was the first federal agency in which the prevailing attitude
-          was the way you make something official is to put it online. So anyone
-          responsible for any agency priority needed the website, and the desire
-          to do it all quickly meant they needed it all the time. Because the agency
-          itself was still establishing its own processes, everyone felt freedom
-          and access to make requests.</p>
+        <p>Periodic redesigns in the first few years had served mostly to pay down
+          critical technical debt and deliver on overdue promises to program offices.
+          The limited resources combined with emergent vital needs meant no lasting
+          strategy for the site had been adhered to. The result was a mishmashed
+          tech stack, inconsistent visual style, and IA with little intentionality.
+          The site was out of date, but the bigger problem was the site was never ready
+          to flex for future growth.</p>
 
-        <p>There were just as many external audiences we couldn’t ignore: regulated
-          companies, consumer advocates, small-scale financial practitioners and
-          coaches, consumers themselves, policymakers, state regulators, civil and
-          criminal lawyers.</p>
-
-        <p>The site had not met the needs of this huge number of stakeholders and
-          audiences. It needed to do that while also being ready to adapt to future
-          needs.</p>
+        <p>The project began with four goals: well-organized content, an architecture
+          that supports anticipated needs, unified visual design, and measurable
+          onsite events.</p>
 
         <h4>The work</h4>
 
-        <p>The project began with four priorities: well-organized content, an architecture
-          that supports anticipated needs, unified visual design, and measurable
-          onsite events. I devised a corresponding four-part approach to scope the
-          content strategy work:
+        <p>To scope the project’s content work, I started with a four-part approach that
+          corresponded to those goals:</p>
 
         <ol>
           <li>Create content and metadata according to the new information
         architecture.</li>
 
-          <li>Use the challenges of using the content (for both administrators and
-        users) to inform platform work.</li>
+          <li>Inform platform work through clarity about the challenges of both administering
+        and consuming content.</li>
 
           <li>Shape content to align with the new design direction, and work through
         specific designs as we apply them to real content.</li>
 
-          <li>Identify what we’re analyzing content for.</li>
+          <li>Identify what purposes we’re analyzing content for.</li>
         </ol>
 
         <p>The universe of what we could have focused on was vast; these constraints
           kept the content work focused.</p>
 
-        <h5>Foundational research</h5>
+        <h5>Giving ourselves foundational knowledge</h5>
 
         <p>We began by building up a knowledge base for the team: internal stakeholder
           interviews; identifying owners for each content type; research into architecture
           and front-end framework choices; and exploring the existing digital and print
           visual styles.</p>
 
-        <p>I lead a content audit. I recruited coworkers to assist me and coached
-          them through capturing significant information. We noted missing and bad
-          metadata, opportunities to add more, misused styles, out of date attachments
-          and contact information, etc.</p>
+        <p>I lead a content audit, capturing 20 columns of information about hundreds of
+          pages across the site. I recruited coworkers to assist me and coached
+          them through when to capture everything and when to capture only deviations.
+          We noted missing and bad metadata, opportunities to add more, misused styles,
+          out of date attachments and information, etc.</p>
 
-        <h5>User research</h5>
+        <h5>Researching with users</h5>
 
         <p>I supported the UX team in conducting a series of user research efforts.
           First, we got external research recommendations from stakeholders to give
@@ -162,6 +165,29 @@
             design directions, and media elements.</li>
         </ul>
 
+        <div class="container text-center">
+          <figure>
+            <img class="img-fluid" src="img/cfpb-la-journey-long.jpg" alt="A journey
+            map representing the process someone went through to make a recent personal
+            financial decision.">
+            <figcaption>
+              A journey map from a fall 2014 testing session. Orange notes represent
+              actions. Green notes represent reactions to those stages of the process.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="container text-center">
+          <figure>
+            <img class="img-fluid" src="img/cfpb-la-concepts.jpg" alt="A design testing
+              subject reviews a concept for consumerfinance.gov">
+            <figcaption>
+              We asked test subjects to review existing designs for other providers of financial
+              information, as well as concepts for the new consumerfinance.gov.
+            </figcaption>
+          </figure>
+        </div>
+
         <p>We learned that people took advice from sources they trusted for personal
           reasons, not for expertise reasons. The <em>.gov</em> in the CFPB’s domain
           wasn’t worth much; friendly, accessible design went a lot further.</p>
@@ -169,38 +195,96 @@
         <h5>Giving the site structure</h5>
 
         <p>The UX team introduced cross-site relationships based on metadata that
-          I assigned to different content. It made related content embeddable, freeing
-          some workflow challenges from sitemap limits while still letting users benefit
-          from a more constrained browsing experience.</p>
+          I assigned to different content. Serialized content became a single content
+          type, recent updates, and I developed the metadata taxonomy—categories,
+          topics, authors, etc.—for the log that enabled. I then worked with content owners
+          to set rules for which metadata signaled that recent updates should
+          be embedded in their persistent content.</p>
 
-        <p>The UX team developed a sitemap based on longitudinal user journeys rather
-          than parallel task types. To make this work, navigation menus for each
-          section also needed to be individually tailored. The visual designers
-          created layouts for each, and I worked with them to further group content
-          in ways that created a natural flow for the targeted audiences of each
-          section. We kept the copy short and allowed space for expansion so the
-          sections could work both as we designed it and in the future.</p>
+          <div class="container text-center">
+            <figure>
+              <img class="img-fluid" src="img/cfgov-recentupdates.png" alt="The
+              user interface for the recent updates content type on consumerfinance.gov.
+              The filtering menu includes name, category, topic, author, and date range.">
+              <figcaption>
+                This user-facing UI to explore <em>Recent updates</em> includes most of
+                the same metadata that the recent updates content type offers to
+                administrators. The category, topic, and author information could also be used to embed
+                links to this content in persistent page types. By focusing on good
+                metadata, we continued to enable individual pages for each
+                category, and to enable teams to share their updates on persistent pages.
+              </figcaption>
+            </figure>
+          </div>
+
+        <p>This went hand in hand with a UI based on longitudinal user journeys rather
+          than parallel task types. It also required navigation menus tailored for each
+          section. The visual designers created layouts, and I worked with them to organize
+          menu options according to a natural flow for the targeted audiences. We kept the
+          copy short and allowed space for expansion. In the present, there was more visual
+          breathing room; in the future, the menus could continue to work without needing
+          additional significant redesigns.</p>
+
+          <div class="container text-center">
+            <figure>
+              <img class="img-fluid" src="img/cfgov-megamenu.png" alt="An example of
+              an expanded menu from consumerfinance.gov from March 2019 showing the multi-column
+              menu style, a featured content section, and room to expand.">
+              <figcaption>
+                Each top navigation menu on consumerfinance.gov is tailored to its
+                section. The overview link at the top and featured content on the
+                right are not present in all menus. Other menus include subheadings and
+                external links for specific purposes. Because the top nav content
+                type is limited to a few items, it represents an ideal place for
+                customized structures. There is space for expansion, and content
+                is grouped logically. In this case, the CFPB’s research output,
+                market data and trends, surveys, and researcher information.
+              </figcaption>
+            </figure>
+          </div>
+
+        <h5>Managing stakeholder input</h5>
 
         <p>Getting buy-in on section labels proved the trickiest stakeholder management
-          problem: experts had concerns with almost every design choice, but we needed
-          their buy-in because this governed the site as a whole. At the same time,
-          they were pushing us to get something online to show progress for all the
-          time we’d invested. I redirected this pressure in a way that created a
-          stronger relationship with the stakeholders and earned the team more trust
-          to do its work.</p>
+          problem. Senior managers from across the CFPB had concerns with almost
+          every choice, but we needed their buy-in because this governed the site
+          as a whole. At the same time, they were pushing us to deliver to production
+          to show progress for all the time already invested.</p>
 
-        <p>I brought the senior management team together, explained the site team’s
-          proposal, and asked them to comment freely. They argued with each other
-          over language for nearly an hour. Eventually some of them suggested the
-          impediment to progress was their lack of agreement, not our work process.</p>
+        <p>To turn this pressure into something productive for
+          the team, I led a meeting for the senior managers in which I explained the site team’s
+          navigation concept and then asked them to comment freely. They began to argue with each
+          other rather than the site team over language, which demonstrated that
+          the necessary condition for progress was agreement amonmg them more than a change
+          in our work.</p>
 
         <p>Within a few weeks, we had buy-in to represent navigation on a beta version
           of the website with language we already had. In turn, we pledged to continue
           researching and refining, exactly in line with the way we had hoped to
-          work in the first place. The senior managers gave universal praise to
-          beta.consumerfinance.gov when it launched in 2015.</p>
+          work in the first place. This established a sense of trust that delivering
+          notional work and testing it was superior to defining all design deliverables
+          in advance. When beta.consumerfinance.gov launched in 2015, it received
+          near-universal praise across the agency.</p>
 
-        <h5>Workflow and governance</h5>
+          <div class="container text-center">
+            <figure>
+              <img class="img-fluid" src="img/beta-cfgov-may2015-full.png" alt="A
+              screenshot of beta.consumerfinance.gov as it appeared in May 2015.">
+              <figcaption>
+                beta.consumerfinance.gov was released in 2015 to show our work in
+                progress. In addition to the site design direction, we made design
+                choices for beta to allay fears about confusing the market the CFPB
+                regulates. The hero uses design-oriented rather than finance-oriented
+                imagery. The button in the hero links to an overview of the
+                new direction and a request for feedback. The copy specifies the purpose
+                of the work. The navigation menus, including the live About menu,
+                would continue to change as we learned more about the audiences
+                we were serving.
+              </figcaption>
+            </figure>
+          </div>
+
+        <h5>Defining content governance and workflow</h5>
 
         <p>Migrating content to the new site required coordinating a number of pieces:
           drafting, shaping content to the visual design components, circulating
@@ -220,27 +304,44 @@
           goals, and priorities, and the site team owned copyediting and the choices
           for how to represent the content, in line with those initial four goals.</p>
 
-        <h5>Results</h5>
+        <h4>Results</h4>
 
         <p>Because of the agency’s caution about how it affected markets, the full
           launch of the new site didn’t come until 2017. But the style, voice, and
           architecture we established and iterated on using beta.consumerfinance.gov
           continue to inform consumerfinance.gov today.</p>
 
+          <div class="container text-center">
+            <figure>
+              <img class="img-fluid mb-3" src="img/cfgov-hero-mar2019.png" alt="The
+              homepage of consumerfinance.gov as of March 2019.">
+              <br />
+              <img class="img-fluid mt-3" src="img/cfgov-hero-jan2015.png" alt="consumerfinance.gov before the redesign.">
+              <figcaption>
+                consumerfinance.gov as it looked in March 2019 (top) and January
+                2015 (bottom). The new hero is persistent and focuses on establishing
+                trust by introducing consumers to what the CFPB is, rather than
+                leading with the newest tools. The navigation menus capture whole areas
+                of interest instead of activity types.
+              </figcaption>
+            </figure>
+          </div>
+
         <p>The voice we established for the CFPB lined up with the lighter, friendlier
           design style. We focused on being informative over being prescriptive. The
           hierarchy of information was flexible, depending on office priorities, but
           it consistently fit the new design elements.</p>
 
-        <p>We developed metadata tools that supported publication in both the existing
-          and new styles at the same time, making the process as seamless as possible
-          for content managers. Users could benefit from more constrained activity
-          because related content populated into sections that targeted their experience.</p>
+        <p>By treating all serialized content types as one type, we simplified content
+          management in the long run. While we were migrating, the metadata tools supported publication
+          simultaneously in the existing and new styles, making the process as seamless as possible
+          for content managers. Creating metadata that enabled embeddable updates reined in users’
+          confusion at browsing across the whole site. Clear menus made it easier to
+          start in the right place.</p>
 
-        <p>We established working relationships with program offices, building up
-          trust that had broken down between content producers and the content management
-          operation that seemed to tell them “no” or “what about over here” as often
-          as “yes.”</p>
+        <p>The team’s working relationships with program offices as we migrated
+          rebuilt trust that had broken down between content producers and the content management
+          team under the duress of the earlier, harried version of the site.</p>
 
         <p>All the new page and content types had knowable purposes. When we wanted
           to measure on-site events, it was easy to know what measures worked best

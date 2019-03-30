@@ -1,3 +1,5 @@
+All the content on this website belongs to me, James Hupp. The design and code are based largely on the Start Bootstrap Stylish Portfolio, full information for which is below. At some point I’ll get around to going through this README to figure out what's still applicable to my site, but I’m not about to blow any of this away, since it’s got all kinds of good licensing and usage information.
+
 # [Start Bootstrap - Stylish Portfolio](https://startbootstrap.com/template-overviews/stylish-portfolio/)
 
 [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) is a responsive, one page portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). The theme features multiple content sections with an off canvas navigation menu.

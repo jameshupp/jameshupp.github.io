@@ -1,6 +1,16 @@
-All the content on this website belongs to me, James Hupp. The design and code are based largely on the Start Bootstrap Stylish Portfolio, full information for which is below. At some point I’ll get around to going through this README to figure out what's still applicable to my site, but I’m not about to blow any of this away, since it’s got all kinds of good licensing and usage information.
+# This site
 
-# [Start Bootstrap - Stylish Portfolio](https://startbootstrap.com/template-overviews/stylish-portfolio/)
+## About
+
+All the content on this website belongs to me, James Hupp. I started from the template detailed in this README and made aesthetic modifications. At some point I’ll go through this file to figure out what from the template is still applicable, but I’m not about to blow any of this away, since it’s got good licensing and usage information.
+
+## Significant revisions
+
+**August 2014:** The first version of this site was forked from [The Personal Page](https://github.com/weightshift/The-Personal-Page).
+
+**March 2019:** I downloaded the Start Bootstrap Stylish Portfolio template and built the new version from that. See below for details.
+
+# Source: [Start Bootstrap - Stylish Portfolio](https://startbootstrap.com/template-overviews/stylish-portfolio/)
 
 [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) is a responsive, one page portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). The theme features multiple content sections with an off canvas navigation menu.
 

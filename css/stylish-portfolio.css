@@ -11,12 +11,11 @@ html {
 }
 
 body {
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, Garamond, Georgia, serif;
+  font-family: 'Source Sans Pro';
 }
 
 .btn-xl {
   padding: 1.25rem 2.5rem;
-  font-family: 'Source Sans Pro';
 }
 
 .content-section {
@@ -33,42 +32,12 @@ body {
   text-transform: uppercase;
 }
 
-.internal-section {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
-.internal-section-heading h2 {
-  font-size: 3rem;
-}
-
-.internal-section-heading h3 {
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
-figure {
-  font-size: small;
-  border: thin #212529 solid;
-  max-width: 720px;
-  margin: 1rem auto;
-}
-
-figcaption {
-  text-align: left;
-  color: #ffffff;
-  font-family: 'Source Sans Pro';
-  padding: 1rem;
-  background-color: #6671BD;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Source Sans Pro';
   font-weight: 700;
 }
 
@@ -76,40 +45,20 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-h5 {
-  text-transform: uppercase;
-  font-size: 1rem;
+/* Map */
+.map {
+  height: 30rem;
 }
 
-header #hero {
-max-width: 640px;
-padding: 2rem 1rem;
-border-radius: .5rem;
-margin: auto;
-background-color: rgba(205,205,205,0.3);
-z-index: 1;
+@media (max-width: 992px) {
+  .map {
+    height: 75%;
+  }
 }
 
-.internalmast {
-  font-family: 'Source Sans Pro';
-  font-weight: 700;
-  min-height: 4rem;
-  position: relative;
-  display: table;
-  width: 100%;
-  height: auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.map iframe {
+  pointer-events: none;
 }
-
-h1 a {
-  text-decoration: none;
-  color: #212529;
-}
-
 
 .scroll-to-top {
   position: fixed;
@@ -144,98 +93,27 @@ h1 a {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg2-masthead-jh.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg2-masthead-jh.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-masthead-jh.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead-jh.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .masthead h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   margin: 0;
   padding: 0;
-}
-
-@media (min-width: 1366px) {
-  .internal-section p {
-    font-size: larger;
-  }
 }
 
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
   }
-  .internalmast h1 {
+  .masthead h1 {
     font-size: 5.5rem;
   }
-  .portfolio-item {
-    max-width: none;
-    margin: 0;
-  }
-  .portfolio-item .caption {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-    -webkit-clip-path: inset(0px);
-    clip-path: inset(0px);
-  }
-  .portfolio-item .caption .caption-content {
-    -webkit-transition: opacity 0.25s;
-    transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
-  }
-  .portfolio-item img {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
-  }
-  .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
-  .portfolio-item:hover::after img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #212529 90%);
-  }
-  .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
 }
-
-@media (max-width: 640px) {
-  .masthead {
-    background-image: none;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    min-height: 0rem;
-  }
-  .masthead h1 {
-    font-size: 4rem;
-  }
-  header #hero {
-    padding: none;
-    border-radius: 0rem;
-    margin: auto;
-    background-color: rgba(255,255,255,0.5);
-
-  }
-  .internalmast {
-    background-image: none;
-    font-size: 3rem;
-  }
-  .internal-section-heading h2 {
-    font-size: 2rem;
-  }
-  .internal-section-heading h4 {
-    font-size: 1.25rem;
-  }
-}
-
 
 /* Side Menu */
 #sidebar-wrapper {
@@ -243,10 +121,8 @@ h1 a {
   z-index: 2;
   right: 0;
   width: 250px;
-  height: 220px;
-  max-height: 100%;
+  height: 100%;
   -webkit-transition: all 0.4s ease 0s;
-  font-family: 'Source Sans Pro';
   transition: all 0.4s ease 0s;
   -webkit-transform: translateX(250px);
   transform: translateX(250px);
@@ -392,14 +268,37 @@ h1 a {
   font-size: 1.2rem;
 }
 
-.portfolio-item::after {
-  display: block;
-  position: relative;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #212529 90%);
-  margin-top: -350px;
-  height: 350px;
-  width: 100%;
-  content: '';
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolio-item .caption .caption-content {
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
 }
 
 footer.footer {
@@ -433,11 +332,6 @@ a:hover, a:focus, a:active {
   color: #155d74;
 }
 
-.internalmast {
-  text-decoration: none;
-  color: #212529 !important;
-}
-
 .btn-primary {
   background-color: #1D809F !important;
   border-color: #1D809F !important;
@@ -450,14 +344,14 @@ a:hover, a:focus, a:active {
 }
 
 .btn-secondary {
-  background-color: #BE492E !important;
-  border-color: #BE492E !important;
+  background-color: #ecb807 !important;
+  border-color: #ecb807 !important;
   color: #fff !important;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #B01C2C !important;
-  border-color: #B01C2C !important;
+  background-color: #ba9106 !important;
+  border-color: #ba9106 !important;
 }
 
 .btn-dark {
@@ -471,7 +365,7 @@ a:hover, a:focus, a:active {
 }
 
 .bg-primary {
-  background-color: #6671BD !important;
+  background-color: #1D809F !important;
 }
 
 .text-primary {
@@ -479,5 +373,5 @@ a:hover, a:focus, a:active {
 }
 
 .text-secondary {
-  color: #BE492E !important;
+  color: #ecb807 !important;
 }
